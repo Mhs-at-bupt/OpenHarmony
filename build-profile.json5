@@ -1,0 +1,56 @@
+/*
+ * Copyright (c) 2023 Huawei Device Co., Ltd.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/smh_2/.ohos/config/openharmony/default_Calculator_1zY0bUDmyTp_XkdIbhf-SvNbMjbx9rZ-uYhNQpuoAc8=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B56018D12CE1CB477BBED8944CE4BBCCE4A6FBC29D7CB2788297D3F3310E89EA19EB2AC3F22C5BE",
+          "profile": "C:/Users/smh_2/.ohos/config/openharmony/default_Calculator_1zY0bUDmyTp_XkdIbhf-SvNbMjbx9rZ-uYhNQpuoAc8=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/smh_2/.ohos/config/openharmony/default_Calculator_1zY0bUDmyTp_XkdIbhf-SvNbMjbx9rZ-uYhNQpuoAc8=.p12",
+          "storePassword": "0000001B0A4B82E3701C17867B6798C04D4BA1DFCBC7EA9CD9B53D739E9DECBEF064CD0E6761E6919521F5"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
