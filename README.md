@@ -1,3 +1,0 @@
-# OpenHarmony
-A simple
-Calculator
